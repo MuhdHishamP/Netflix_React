@@ -4,7 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import RowPost from "./components/Row_Post/RowPost";
-import { originals,action } from "./constants/constants";
+import { originals,action,RomanceMovies } from "./constants/constants";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Banner />
       <RowPost title="Netflix Originals" genre={originals}/>
       <RowPost title="Action" isSmall genre={action}/>
+      <RowPost title="Romance" isSmall genre={RomanceMovies}/>
      </>
   );
 }
